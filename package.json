@@ -1,0 +1,11 @@
+{
+  "name": "leetcodejs",
+  "version": "1.0.0",
+  "description": "katas, leetcode problems and other js coding practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
