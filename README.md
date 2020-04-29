@@ -5,6 +5,7 @@
 Don't look at my source code if you are planning on working on these problems. Go solve them yourself!
 
 ```bash
+npm install
 npm run watch
 ```
 
