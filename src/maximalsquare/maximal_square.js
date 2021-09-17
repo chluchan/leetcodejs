@@ -29,6 +29,28 @@ function maximalSquare(matrix) {
           return maxWidth ** 2;
         }
       }
+
+      if (maxWidth >= 3) {
+        let maxSubSequence1s = 0;
+        let thisSubSequence1s = 0;
+        for (let col = 0; col < numColumns; col++) {
+          if (matrix[rowStart + maxWidth - 1][col] === '1') {
+            thisSubSequence1s++;
+            if (thisSubSequence1s > maxSubSequence1s) {
+              maxSubSequence1s = thisSubSequence1s;
+            } else {
+              thisSubSequence1s = 0;
+            }
+            if (maxSubSequence1s >= maxWidth) {
+              break;
+            }
+          }
+        }
+
+        if (maxSubSequence1s < maxWidth) {
+          rowStart += maxWidth - 1;
+        }
+      }
     }
   }
 
